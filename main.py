@@ -51,14 +51,18 @@ def hurufKeMorse():
     return " ".join(jawaban)
 
 if __name__ == "__main__":
-    print("===== Sandi Morse ======")
-    print("[1] Morse ke Huruf")
-    print("[2] Huruf Ke Morse")
-    nomor = int(input("Masukan Pilihan: "))
-    if nomor == 1:
-        print(morseKeHuruf())
-    elif nomor == 2:
-        print(hurufKeMorse())
+    while(True):
+        print("===== Sandi Morse ======")
+        print("[1] Morse ke Huruf")
+        print("[2] Huruf Ke Morse")
+        print("[3] Keluar")
+        nomor = int(input("Masukan Pilihan: "))
+        if nomor == 1:
+            print(morseKeHuruf())
+        elif nomor == 2:
+            print(hurufKeMorse())
+        elif nomor == 3:
+            break
 
 
 
