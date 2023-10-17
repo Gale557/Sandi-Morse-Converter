@@ -46,7 +46,7 @@ def hurufKeMorse():
     jawaban = []
     for i in range(len(sandi)):
         for j in range(26):
-            if sandi[i].lower() == list(morse.keys())[j]:
+            if sandi[i].lowe() == list(morse.keys())[j]:
                 jawaban.append(morse[list(morse.keys())[j]])
     return " ".join(jawaban)
 
